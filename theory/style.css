@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: gainsboro;
+}
+
+.box {
+  height: 90%;
+  width: 60%;
+  background-color: wheat;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.inner-box {
+  width: 80px;
+  height: 40px;
+}
+
+#box1 {
+  background-color: red;
+}
+
+#box2 {
+  background-color: green;
+}
+
+#box3 {
+  background-color: blue;
+}
