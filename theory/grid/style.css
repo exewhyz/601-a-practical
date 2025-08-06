@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+  color: white;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 20% 50% auto;
+    grid-template-rows: 20% 30% 30% 20%;
+}
+
+#two{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: red;
+}

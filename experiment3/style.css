@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: white;
+  --secondary-color: black;
+  --navbar-color: rgb(37, 197, 5);
+  --sidebar-color: gainsboro;
+  --link-color: beige;
+  --text-color: white;
+}
+
+.dark {
+  --primary-color: black;
+  --secondary-color: white;
+  --navbar-color: rgb(45, 45, 45);
+  --sidebar-color: rgb(79, 79, 79);
+  --link-color: rgb(156, 156, 156);
+  --text-color: white;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.grid-box {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  grid-template-rows: 10% 1fr 10%;
+  grid-template-areas:
+    "nav nav"
+    "sidebar main"
+    "footer footer";
+}
+
+#navbar {
+  grid-area: nav;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.2em;
+  background-color: var(--navbar-color);
+  color: var(--text-color);
+}
+
+#sidebar {
+  grid-area: sidebar;
+  height: 100%;
+  padding: 1.2em 2em;
+  background-color: var(--sidebar-color);
+}
+ul {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  list-style: none;
+}
+
+li {
+  background-color: var(--link-color);
+  padding: 10px;
+  border-radius: 10px;
+}
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+#main {
+  grid-area: main;
+  padding: 1.5em 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--navbar-color);
+  color: var(--text-color);
+}
