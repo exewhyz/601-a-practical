@@ -18,7 +18,6 @@ element.classList.toggle("test");
 
 const h3 = document.createElement("h3");
 h3.innerText = "this is heading 3";
-
 document.body.appendChild(h3);
 
 const button = document.querySelector("#btn");
