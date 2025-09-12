@@ -1,5 +1,11 @@
-export default function app() {
+import Products from "./components/products";
+
+function App() {
   return (
-    <div>Hello from Our first React App</div>
-  )
+    <div>
+      <Products />
+    </div>
+  );
 }
+
+export default App; //default export
